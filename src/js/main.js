@@ -7,17 +7,17 @@ var element = document.querySelector("leaflet-map");
 var L = element.leaflet;
 var map = element.map;
 
-
 var data = require("./council.geo.json");
 var element = document.querySelector("leaflet-map");
 
 var mapElement = document.querySelector("leaflet-map");
 
+
 if (mapElement) {
   var L = mapElement.leaflet;
-  var map = mapElement.map;
+  var map = mapElement.map; 
 
-  map.scrollWheelZoom.disable();
+  // map.scrollWheelZoom.disable();
 
   var focused = false;
 
@@ -89,6 +89,8 @@ var onEachFeature = function(feature, layer) {
   layer.bindPopup(feature.properties)
 };
 
- map.scrollWheelZoom.disable();
+map.scrollWheelZoom.disable();
 
- map.setView([47.6300, -122.3381], 11);
+map.options.minZoom = 11;
+ 
+map.setView([47.6300, -122.3381], 11);

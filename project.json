@@ -5,8 +5,8 @@
       "path": "cursed-screamer"
     },
     "live": {
-      "bucket": "",
-      "path": ""
+      "bucket": "projects.seattletimes.com",
+      "path": "2018/local/city-council-districts"
     }
   },
   "title": "",
