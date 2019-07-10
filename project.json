@@ -6,7 +6,7 @@
     },
     "live": {
       "bucket": "projects.seattletimes.com",
-      "path": "2018/local/city-council-districts"
+      "path": "2019/local/city-council-districts"
     }
   },
   "title": "",
